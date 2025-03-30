@@ -8,6 +8,7 @@ The paper proposes a novel approach that integrates **Genetic Algorithms (GAs)**
 - **Title:** GAGAN: Enhancing Image Generation Through Hybrid Optimization of Genetic Algorithms and Deep Convolutional Generative Adversarial Networks
 - **Authors:** Despoina Konstantopoulou, Paraskevi Zacharia, Michail Papoutsidakis, Helen C. Leligou, Charalampos Patrikakis
 - **Year:** 2024
+- **Journal:** Algorithms (ISSN 1999-4893)
 - **DOI:** [https://doi.org/10.3390/a17120584](https://doi.org/10.3390/a17120584)
 
 ## Current Status
