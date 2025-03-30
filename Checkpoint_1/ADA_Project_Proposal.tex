@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\title{Paper Selection Proposal}
+\author{Basil Ali Khan \and Ahsan Siddiqui}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Paper Details}
+\begin{itemize}
+    \item \textbf{Title:} \textit{GAGAN: Enhancing Image Generation Through Hybrid Optimization of Genetic Algorithms and Deep Convolutional Generative Adversarial Networks}
+    \item \textbf{Authors:} Despoina Konstantopoulou, Paraskevi Zacharia, Michail Papoutsidakis, Helen C. Leligou, Charalampos Patrikakis
+    \item \textbf{Conference/Journal:} \textit{Algorithms} (ISSN 1999-4893)
+    \item \textbf{Year:} 2024
+    \item \textbf{DOI/Link:} \href{https://doi.org/10.3390/a17120584}{https://doi.org/10.3390/a17120584}
+\end{itemize}
+
+\section*{Summary}
+This paper presents \textbf{GAGAN}, a hybrid approach that enhances \textbf{Generative Adversarial Networks (GANs)} by integrating \textbf{Genetic Algorithms (GAs)} to optimize the discriminator's weights. Traditional \textbf{Deep Convolutional GANs (DCGANs)} often suffer from training instability and mode collapse. By incorporating evolutionary techniques like crossover and mutation, GAGAN improves convergence stability and image quality. The model was tested on the \textbf{CelebA dataset}, generating high-quality \textbf{128 × 128 images}. The results showed lower generator loss and better image fidelity compared to standard DCGANs.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{image.png}
+    \caption{GAGAN Model Flowchart}
+    \label{fig:enter-label}
+\end{figure}
+
+\section*{Justification}
+This paper is highly relevant to our project because:
+\begin{enumerate}
+    \item It explores a novel \textbf{hybrid learning} approach that combines \textbf{deep learning} and \textbf{evolutionary algorithms}.
+    \item It tackles key challenges in \textbf{GAN training} (mode collapse, instability), making it crucial for advancing generative models.
+    \item The integration of \textbf{Genetic Algorithms} in \textbf{deep learning} is an emerging research area with real-world applications in \textbf{image generation} and \textbf{AI creativity}.
+\end{enumerate}
+
+\section*{Implementation Feasibility}
+\begin{itemize}
+    \item \textbf{Code \& Resources:} The paper does not mention a public implementation, but we plan to implement the genetic algorithms ourselves and using built-in libraries for the neural network training part as discussed in the meeting with our instructor.
+    \item \textbf{Datasets:} The CelebA dataset is publicly available and can be used for training. However, we might preferably choose to use another publicly available dataset
+    \item \textbf{Computational Requirements:} Training GANs requires \textbf{high-end GPUs}, hence we will be using Google Colab for this project.
+\end{itemize}
+
+\section*{Team Responsibilities}
+We plan to divide work equally at every stage. Since Ahsan has previously worked in this domain, he will be taking the lead in the implementation stage. 
+\begin{itemize}
+    \item \textbf{Reading \& Understanding:} Basil Ali Khan, Ahsan Siddiqui
+    \item \textbf{Coding \& Implementation:} Ahsan Siddiqui, Basil Ali Khan
+    \item \textbf{Writing \& Report Preparation:} Ahsan Siddiqui, Basil Ali Khan
+\end{itemize}
+
+\section*{GitHub Repository}
+The implementation and project code will be maintained at:  
+\href{https://github.com/basil-ali-khan/ADA-Project}{https://github.com/basil-ali-khan/ADA-Project}
+
+
+\end{document}
