@@ -1,0 +1,154 @@
+(base) PS C:\Users\ahsan\OneDrive\Documents\Algorithms\ADA-Project\code> & C:/Users/ahsan/AppData/Local/Programs/Python/Python313/python.exe c:/Users/ahsan/OneDrive/Documents/Algorithms/ADA-Project/code/main.py
+Using device: cpu
+Starting Training...
+Epoch 1/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 1.4199, G Loss: 0.7321, Real Score: 0.5995, Fake Score: 0.4880
+Batch 5/634, D Loss: N/A, G Loss: 1.2029, Real Score: 0.4692, Fake Score: 0.3250
+Batch 10/634, D Loss: 1.8475, G Loss: 0.8152, Real Score: 0.5793, Fake Score: 0.4765
+Batch 15/634, D Loss: N/A, G Loss: 1.0638, Real Score: 0.4592, Fake Score: 0.3898
+Epoch 1/50, G Loss: 0.9590, D Loss: 1.8527
+Epoch 2/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 2.7786, G Loss: 0.8614, Real Score: 0.6091, Fake Score: 0.4876
+Batch 5/634, D Loss: N/A, G Loss: 0.3899, Real Score: 0.5885, Fake Score: 0.7197
+Batch 10/634, D Loss: 5.5400, G Loss: 0.1787, Real Score: 0.4707, Fake Score: 0.8536
+Batch 15/634, D Loss: N/A, G Loss: 0.0085, Real Score: 0.5089, Fake Score: 0.9916
+Epoch 2/50, G Loss: 0.3325, D Loss: 6.0725
+Epoch 3/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 12.0502, G Loss: 0.0082, Real Score: 0.6018, Fake Score: 0.9919
+Batch 5/634, D Loss: N/A, G Loss: 0.0009, Real Score: 0.5144, Fake Score: 0.9991
+Batch 10/634, D Loss: 12.2298, G Loss: 0.0001, Real Score: 0.7567, Fake Score: 0.9999
+Batch 15/634, D Loss: N/A, G Loss: 0.0005, Real Score: 0.5751, Fake Score: 0.9995
+Epoch 3/50, G Loss: 0.0027, D Loss: 12.3441
+Epoch 4/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 13.0342, G Loss: 0.0035, Real Score: 0.5058, Fake Score: 0.9965
+Batch 5/634, D Loss: N/A, G Loss: 0.0009, Real Score: 0.6784, Fake Score: 0.9991
+Batch 10/634, D Loss: 12.5953, G Loss: 0.0012, Real Score: 0.3922, Fake Score: 0.9988
+Batch 15/634, D Loss: N/A, G Loss: 0.0001, Real Score: 0.7704, Fake Score: 0.9999
+Epoch 4/50, G Loss: 0.0012, D Loss: 13.7181
+Epoch 5/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 15.5585, G Loss: 0.0014, Real Score: 0.8052, Fake Score: 0.9986
+Batch 5/634, D Loss: N/A, G Loss: 0.0003, Real Score: 0.5556, Fake Score: 0.9997
+Batch 10/634, D Loss: 17.0044, G Loss: 0.0002, Real Score: 0.7321, Fake Score: 0.9998
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.7061, Fake Score: 1.0000
+Epoch 5/50, G Loss: 0.0008, D Loss: 17.3750
+Epoch 6/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 15.2975, G Loss: 0.0111, Real Score: 0.6714, Fake Score: 0.9891
+Batch 5/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.7051, Fake Score: 1.0000
+Batch 10/634, D Loss: 15.2019, G Loss: 0.0002, Real Score: 0.7672, Fake Score: 0.9998
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.5922, Fake Score: 1.0000
+Epoch 6/50, G Loss: 0.0008, D Loss: 26.2207
+Epoch 7/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 14.0677, G Loss: 0.0004, Real Score: 0.7631, Fake Score: 0.9996
+Batch 5/634, D Loss: N/A, G Loss: 0.0002, Real Score: 0.7448, Fake Score: 0.9998
+Batch 10/634, D Loss: 19.8135, G Loss: 0.0004, Real Score: 0.5234, Fake Score: 0.9996
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.6757, Fake Score: 1.0000
+Epoch 7/50, G Loss: 0.0003, D Loss: 25.9236
+Epoch 8/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 70.0642, G Loss: 0.0003, Real Score: 0.7484, Fake Score: 0.9997
+Batch 5/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.5242, Fake Score: 1.0000
+Batch 10/634, D Loss: 16.5061, G Loss: 0.0008, Real Score: 0.5648, Fake Score: 0.9993
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.6823, Fake Score: 1.0000
+Epoch 8/50, G Loss: 0.0002, D Loss: 28.6972
+Epoch 9/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 18.9484, G Loss: 0.0004, Real Score: 0.6728, Fake Score: 0.9996
+Batch 5/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.6647, Fake Score: 1.0000
+Batch 10/634, D Loss: 36.9903, G Loss: 0.0000, Real Score: 0.8039, Fake Score: 1.0000
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.7089, Fake Score: 1.0000
+Epoch 9/50, G Loss: 0.0002, D Loss: 34.6330
+Epoch 10/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 31.6878, G Loss: 0.0002, Real Score: 0.5991, Fake Score: 0.9998
+Batch 5/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.8360, Fake Score: 1.0000
+Batch 10/634, D Loss: 46.3392, G Loss: 0.0000, Real Score: 0.8730, Fake Score: 1.0000
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.6228, Fake Score: 1.0000
+Epoch 10/50, G Loss: 0.0001, D Loss: 33.8622
+Epoch 11/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 34.0989, G Loss: 0.0002, Real Score: 0.7401, Fake Score: 0.9998
+Batch 5/634, D Loss: N/A, G Loss: 0.0001, Real Score: 0.7413, Fake Score: 0.9999
+Batch 10/634, D Loss: 35.7986, G Loss: 0.0000, Real Score: 0.4936, Fake Score: 1.0000
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.6553, Fake Score: 1.0000
+Epoch 11/50, G Loss: 0.0001, D Loss: 48.6736
+Epoch 12/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 60.3723, G Loss: 0.0028, Real Score: 0.4139, Fake Score: 0.9973
+Batch 5/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.6691, Fake Score: 1.0000
+Batch 10/634, D Loss: 54.5512, G Loss: 0.0001, Real Score: 0.7696, Fake Score: 0.9999
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.7309, Fake Score: 1.0000
+Epoch 12/50, G Loss: 0.0002, D Loss: 69.3799
+Epoch 13/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 72.5967, G Loss: 0.0000, Real Score: 0.7958, Fake Score: 1.0000
+Batch 5/634, D Loss: N/A, G Loss: 0.0001, Real Score: 0.8918, Fake Score: 0.9999
+Batch 10/634, D Loss: 95.3783, G Loss: 0.0000, Real Score: 0.7389, Fake Score: 1.0000
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.7700, Fake Score: 1.0000
+Epoch 13/50, G Loss: 0.0001, D Loss: 69.3944
+Epoch 14/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 85.2553, G Loss: 0.0001, Real Score: 0.8869, Fake Score: 0.9999
+Batch 5/634, D Loss: N/A, G Loss: 0.0001, Real Score: 0.6927, Fake Score: 0.9999
+Batch 10/634, D Loss: 53.0328, G Loss: 0.0001, Real Score: 0.7973, Fake Score: 0.9999
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.5934, Fake Score: 1.0000
+Epoch 14/50, G Loss: 0.0000, D Loss: 57.9443
+Epoch 15/50
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Using device: cpu
+Batch 0/634, D Loss: 53.8712, G Loss: 0.0090, Real Score: 0.4539, Fake Score: 0.9920
+Batch 5/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.7736, Fake Score: 1.0000
+Batch 10/634, D Loss: 94.1406, G Loss: 0.0000, Real Score: 0.7089, Fake Score: 1.0000
+Batch 15/634, D Loss: N/A, G Loss: 0.0000, Real Score: 0.6359, Fake Score: 1.0000
+Epoch 15/50, G Loss: 0.0005, D Loss: 87.8395
+Epoch 16/50
