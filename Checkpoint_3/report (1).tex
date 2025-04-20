@@ -30,7 +30,7 @@ Our project focuses on implementing a Generative Adversarial Network (GAN) with 
 \end{itemize}
 
 \textbf{Omissions:}  
-We have not yet implemented advanced regularization techniques like gradient penalties or spectral normalization due to time constraints.
+We have not yet implemented advanced regularization techniques like gradient penalties or spectral normalization due to time constraints. These implementations are anyways out of scope of our project as our task was to focus on optimizing discriminator weights using Evolutionary Algorithms.
 
 \section*{Correctness Testing}
 To verify the correctness of our implementation, we performed the following tests:
@@ -51,16 +51,9 @@ To verify the correctness of our implementation, we performed the following test
     Training on a subset of the CelebA dataset (10\% of the total dataset) with a batch size of 32 and a population size of 10 takes approximately 5 minutes per epoch on an NVIDIA RTX 3060 GPU.
 
     \item \textbf{Scaling Issues:}  
-    Increasing the population size significantly impacts runtime due to the linear scaling of fitness evaluations.
+    Increasing the population size significantly impacts runtime due to the linear scaling of fitness evaluations. Using the full CelebA dataset (10× more data) like in the research paper will increase the number of iterations per epoch by 10×. This directly translates to approximately 10× longer training time per epoch and storage and data loading pipelines may become bottlenecks. Increasing batch size will also consume more GPU memory, potentially hitting hardware limits
 \end{itemize}
 
-\section*{Baseline or Comparative Evaluation}
-We compared our implementation with a standard GAN (without genetic algorithms) on the CelebA dataset. Key observations include:
-
-\begin{itemize}
-    \item \textbf{Image Quality:} The GAGAN implementation produces more diverse images due to the evolving discriminator population.
-    \item \textbf{Training Stability:} The genetic algorithm helps mitigate mode collapse by introducing diversity in the discriminator population.
-\end{itemize}
 
 \section*{Challenges \& Solutions}
 \begin{itemize}
