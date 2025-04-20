@@ -15,4 +15,5 @@ Make sure you have Python 3.8+ installed. Install the required Python libraries 
 pip install -r requirements.txt
 
 ### **2. To run the code**
+```bash
 python main.py
