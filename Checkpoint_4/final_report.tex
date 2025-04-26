@@ -35,6 +35,7 @@ The motivation behind our project was to explore whether \textbf{Evolutionary Al
     \item Discriminator outputs for real and fake samples
 \end{itemize}
 
+
 \textbf{Main Idea:} In GAGAN, the \textbf{generator} is still trained with backpropagation, but the \textbf{discriminator} population evolves using genetic operations: selection, crossover, and mutation, based on fitness evaluations.
 
 \section{Implementation Summary}
@@ -73,6 +74,13 @@ The motivation behind our project was to explore whether \textbf{Evolutionary Al
     \item \textbf{Sample Outputs:} Visual inspection of generated images.
     \item \textbf{Training Metrics:} Tracked generator and discriminator losses, real/fake scores.
 \end{itemize}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{gagan_loss_plot.png}
+\caption{Generator and Discriminator Loss During Training.}
+\label{fig:loss_curve}
+\end{figure}
+
 
 \subsection{Runtime \& Complexity}
 \textbf{Theoretical Complexity:}
@@ -86,6 +94,14 @@ The motivation behind our project was to explore whether \textbf{Evolutionary Al
     \item Training on 10\% of CelebA with batch size 32, population 10 took approximately 5 minutes per epoch on CPU.
 \end{itemize}
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{tracking_progress.jpg}
+\caption{Console outputs when training starts}
+\label{fig:training_logs}
+\end{figure}
+
+
 \subsection{Comparisons}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
@@ -97,6 +113,14 @@ GAGAN        & Improved & High & Slower \\
 \hline
 \end{tabular}
 \end{center}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{final_generated_images.png}
+\caption{Final Generated Images after Training GAGAN.}
+\label{fig:final_generated}
+\end{figure}
+
 
 \subsection{Enhancements}
 \begin{itemize}
