@@ -1,42 +1,119 @@
-# GAGAN: Hybrid Optimization of GANs Using Genetic Algorithms
 
-## Project Overview
-GAGAN (Genetic Algorithm-Guided GAN) is a novel approach that enhances the training of Generative Adversarial Networks (GANs) by integrating Genetic Algorithms (GAs) into the training loop. Unlike traditional GANs where both the generator and discriminator are updated using gradient-based backpropagation, GAGAN evolves the discriminator’s weights using a population-based genetic algorithm while the generator continues to be trained with backpropagation. This hybrid framework improves training stability, addresses mode collapse, and boosts the diversity and quality of generated images.
+# GAGAN: Generative Adversarial Network with Genetic Algorithms
 
-## Paper Details
-- **Title:** GAGAN: Enhancing Image Generation Through Hybrid Optimization of Genetic Algorithms and Deep Convolutional Generative Adversarial Networks
-- **Authors:** Despoina Konstantopoulou, Paraskevi Zacharia, Michail Papoutsidakis, Helen C. Leligou, Charalampos Patrikakis
-- **Year:** 2024
-- **Journal:** Algorithms (ISSN 1999-4893)
-- **DOI:** [https://doi.org/10.3390/a17120584](https://doi.org/10.3390/a17120584)
+GAGAN is an image generation framework that enhances traditional Generative Adversarial Networks (GANs) with a population of discriminators evolved using Genetic Algorithms. The generator creates realistic images from random noise, while the discriminators evolve through selection, crossover, and mutation to better distinguish real from fake images.
+
+---
+
+## Requirements
+
+### Install Dependencies
+
+Ensure Python 3.8+ is installed. Install the required Python libraries using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Dataset
+
+This implementation uses the **CelebA dataset** for training.
+
+1. Download the CelebA dataset from the [official website](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
+2. Extract it and place it in the following directory structure:
+
+```
+./data/CelebA
+```
+
+---
+
+## How to Run
+
+### Training the Model
+
+To train the GAGAN model, run:
+
+```bash
+python main.py
+```
 
 ## Key Features
-- **Hybrid Optimization**: Combines evolutionary search (via GAs) with standard gradient-based learning.
-- **Improved Discriminator Training**: Evolving discriminator weights leads to better generalization and feedback for the generator.
-- **Enhanced Image Generation**: Results in more stable training and diverse, realistic outputs.
-- **Compatible with Standard Datasets**: Demonstrated on MNIST, CIFAR-10, and CelebA datasets.
 
-## Architecture Summary
-- **Generator**: Trained with backpropagation using standard convolutional layers.
-- **Discriminator**: Trained with both backpropagation and GA-based evolution.
-- **Genetic Algorithm Components**:
-  - **Selection**: Chooses top-performing discriminators based on fitness.
-  - **Crossover**: Combines weights from two parents.
-  - **Mutation**: Applies small perturbations to explore new solutions.
-- **Population Management**: Multiple discriminator instances are maintained and evolved over generations.
+### Generator
 
-## Advantages Over Traditional GANs
-- Reduced sensitivity to hyperparameter tuning.
-- Better resistance to mode collapse.
-- Faster convergence and improved training stability.
-- Higher-quality outputs on complex datasets.
+- Generates images from random noise using transposed convolution layers.
+- Trained to fool the best discriminator in the population.
 
-## Technical Challenges
-- High computational and memory requirements due to population-based training.
-- Implementation complexity in integrating GA with deep learning frameworks.
-- Numerical precision and convergence stability concerns during hybrid training.
-- Sensitive hyperparameter tuning required for GA components (mutation rate, crossover strategy, etc.).
+### 🛡Discriminator Population
 
-## Contributors
-- **Basil Ali Khan**
-- **Ahsan Siddiqui**
+- A population of discriminators trained in parallel.
+- Fitness is evaluated based on their ability to classify real vs. fake images.
+
+### Genetic Algorithm
+
+- Crossover and mutation operations applied to discriminators.
+- Elite selection preserves the best-performing discriminators each generation.
+
+### Training Stability
+
+- Label smoothing and noise injection are used to enhance stability.
+- Gradient clipping prevents exploding gradients during backpropagation.
+
+---
+
+## Output
+
+### Generated Images
+
+- Saved in: `generated_images/`
+- Example: `generated_images/epoch_10.png` (images after 10 epochs)
+
+### Loss Plots
+
+- Generator and discriminator loss curves are saved as:
+  ```
+  gagan_loss_plot.png
+  ```
+
+### 💾 Saved Models
+
+- Generator and best discriminator models saved periodically:
+  ```
+  generator_epoch_X.pth
+  discriminator_epoch_X.pth
+  ```
+
+---
+
+## ⚙️ Customizing Training
+
+Modify the following hyperparameters in `main.py`:
+
+| Hyperparameter      | Description                          |
+|---------------------|--------------------------------------|
+| `batch_size`        | Training batch size                  |
+| `latent_dim`        | Size of input noise vector           |
+| `learning_rate_g`   | Learning rate for generator          |
+| `learning_rate_d`   | Learning rate for discriminator      |
+| `population_size`   | Number of discriminators             |
+| `mutation_rate`     | Probability of mutation in population|
+| `elite_ratio`       | Fraction of top discriminators kept  |
+| `num_epochs`        | Number of training epochs            |
+
+---
+
+## ✅ Testing
+
+1. Make sure the CelebA dataset is correctly placed in `./data/CelebA`.
+2. Run the following command to start training and verify functionality:
+
+```bash
+python main.py
+```
+
+3. Check the `generated_images/` folder for output.
+
+---
