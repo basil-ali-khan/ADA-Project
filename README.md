@@ -113,9 +113,13 @@ Modify the following hyperparameters in `main.py`:
 2. Run the following command to start training and verify functionality:
 
 ```bash
+
 python main.py
 ```
 
 3. Check the `generated_images/` folder for output.
+
+## Project Demo Video
+Youtube : https://youtu.be/eDKWfbx-A94
 
 ---
