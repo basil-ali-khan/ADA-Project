@@ -3,6 +3,8 @@
 
 GAGAN is an image generation framework that enhances traditional Generative Adversarial Networks (GANs) with a population of discriminators evolved using Genetic Algorithms. The generator creates realistic images from random noise, while the discriminators evolve through selection, crossover, and mutation to better distinguish real from fake images.
 
+You can view the live demo and presentation for this project at: https://www.youtube.com/watch?v=eDKWfbx-A94
+
 ---
 
 ## Requirements
